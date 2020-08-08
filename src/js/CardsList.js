@@ -135,6 +135,7 @@ export default class CardList {
     this.removePlug();
 
     if (closestCard.classList.contains('cloned')) {
+      this.ghostEl.style.display = 'block';
       return;
     }
 
