@@ -1,0 +1,45 @@
+{
+    "name": "ahj",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack-dev-server --config webpack.dev.js",
+        "build": "webpack --config webpack.prod.js",
+        "lint": "eslint .",
+        "test": "jest --testPathPattern=./src/",
+        "coverage": "jest --testPathPattern=./src/ --coverage",
+        "e2e": "jest --testPathPattern=./e2e/",
+        "ci": "start-server-and-test start http://localhost:9000 test"
+    },
+    "author": "NazarovAn",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.9.0",
+        "@babel/preset-env": "^7.9.0",
+        "babel-jest": "^25.1.0",
+        "babel-loader": "^8.1.0",
+        "css-loader": "^3.6.0",
+        "eslint": "^7.2.0",
+        "eslint-config-airbnb-base": "^14.2.0",
+        "eslint-plugin-import": "^2.21.2",
+        "favicons-webpack-plugin": "^3.0.1",
+        "file-loader": "^6.0.0",
+        "html-loader": "^0.5.5",
+        "jest": "^25.1.0",
+        "puppeteer": "^5.0.0",
+        "raw-loader": "^4.0.1",
+        "start-server-and-test": "^1.11.2",
+        "webpack": "^4.42.1",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.10.3"
+    },
+    "dependencies": {
+        "core-js": "^3.6.4",
+        "html-webpack-plugin": "^4.3.0",
+        "mini-css-extract-plugin": "^0.9.0",
+        "optimize-css-assets-webpack-plugin": "^5.0.3",
+        "terser-webpack-plugin": "^2.3.5",
+        "webpack-merge": "^4.2.2"
+    }
+}
